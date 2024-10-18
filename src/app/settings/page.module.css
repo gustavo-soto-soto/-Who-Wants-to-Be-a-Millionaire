@@ -1,0 +1,121 @@
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../../assets/images/bg.webp");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.settings-container{
+    width: 600px;
+    height: 450px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 20px;
+    padding: 20px;
+    border: none;
+    background-color: #1a3552dc;
+    border-radius: 20px;
+    color: var(--light-color);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.settings-container h1{
+    text-align: center;
+}
+
+.params-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.option-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.option-container label{
+    font-size: large;
+}
+
+.option-container select, .option-container input{
+    height: 45px;
+    font-size: large;
+    background-color: var(--light-color);
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.option-container input{
+    height: 36px;
+    text-indent: 10px;
+}
+
+.actions-container{
+    width: 100%;
+    height: auto;
+    position: sticky;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.back-button{
+    width: 140px;
+    height: 40px;
+    background-color: var(--success-color-dark);
+    color: var(--light-color);
+    text-align: center;
+    font-size: 15px;
+    border: none;
+    border-radius: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    cursor: pointer;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+.back-button:hover{
+    background-color: #12743be1;
+}
+
+@media (max-width: 500px) {
+    .main {
+        width: 100%;
+        background-size: cover;
+        place-content: center;
+    }
+    .settings-container{
+        width: 80%;
+        
+    }
+}
